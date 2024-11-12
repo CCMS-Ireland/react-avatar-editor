@@ -1,8 +1,11 @@
 {
   "name": "react-avatar-editor-mono",
   "engines": {
-    "pnpm": "8.x"
+    "pnpm": "9.x"
   },
+  "workspaces": [
+    "packages/*"
+  ],
   "version": "1.0.0",
   "scripts": {
     "build": "pnpm --filter react-avatar-editor build",

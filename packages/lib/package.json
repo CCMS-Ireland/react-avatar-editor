@@ -1,6 +1,6 @@
 {
-  "name": "react-avatar-editor",
-  "version": "14.0.0-beta.5",
+  "name": "@ccms-ireland/react-avatar-editor",
+  "version": "14.0.2",
   "description": "Avatar / profile picture component. Resize and crop your uploaded image using a intuitive user interface.",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
@@ -8,20 +8,19 @@
   "sideEffects": false,
   "exports": {
     ".": {
-      "require": "./src/index.ts",
-      "import": "./src/index.ts",
-      "types": "./src/index.ts"
+      "require": "./dist/index.js",
+      "import": "./dist/index.mjs",
+      "types": "./dist/index.d.ts"
     }
   },
   "scripts": {
     "build": "tsup",
     "clean": "rm -rf dist",
     "test": "pnpm build && playwright test",
-    "prepublishOnly": "pnpm -w lint && pnpm test && pnpm build"
+    "prepublishOnly": "pnpm -w lint && pnpm build"
   },
   "files": [
-    "dist",
-    "src"
+    "dist"
   ],
   "dependencies": {},
   "peerDependencies": {

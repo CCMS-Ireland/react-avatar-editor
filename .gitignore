@@ -40,3 +40,5 @@ dist/
 dist-docs/
 
 .cache
+
+.npmrc
